@@ -175,13 +175,104 @@ const Dashboard = () => {
           </TabsContent>
 
           <TabsContent value="experts">
-            <Card className="p-8 text-center shadow-[var(--shadow-soft)]">
-              <Users className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="text-xl font-semibold mb-2">Expert Network Coming Soon</h3>
-              <p className="text-muted-foreground">
-                Connect with healthcare professionals and researchers worldwide.
-              </p>
-            </Card>
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-2xl font-bold mb-2">Healthcare Experts</h2>
+                <p className="text-muted-foreground">Connect with our network of healthcare professionals and researchers</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Expert 1 - Dr. Rajesh Kumar */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Rajesh Kumar</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Cardiology Specialist</p>
+                      <p className="text-xs text-muted-foreground mb-3">15+ years experience in cardiac care and research</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Expert 2 - Dr. Priya Sharma */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-accent" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Priya Sharma</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Oncology Researcher</p>
+                      <p className="text-xs text-muted-foreground mb-3">Specializing in cancer immunotherapy and clinical trials</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Expert 3 - Dr. Anil Patel */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-secondary/50 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Anil Patel</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Neurology Expert</p>
+                      <p className="text-xs text-muted-foreground mb-3">Leading research in neurodegenerative diseases</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Expert 4 - Dr. Meera Reddy */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Meera Reddy</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Diabetes Specialist</p>
+                      <p className="text-xs text-muted-foreground mb-3">Expert in endocrinology and metabolic disorders</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Expert 5 - Dr. Vikram Singh */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-accent" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Vikram Singh</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Pulmonology Researcher</p>
+                      <p className="text-xs text-muted-foreground mb-3">Respiratory diseases and clinical trial coordination</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Expert 6 - Dr. Kavita Menon */}
+                <Card className="p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 bg-secondary/50 rounded-full flex items-center justify-center">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg">Dr. Kavita Menon</h3>
+                      <p className="text-sm text-muted-foreground mb-2">Pediatric Specialist</p>
+                      <p className="text-xs text-muted-foreground mb-3">Child healthcare and developmental research</p>
+                      <Button size="sm" variant="outline" className="w-full">Connect</Button>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
           </TabsContent>
 
           <TabsContent value="chat">

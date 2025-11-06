@@ -9,6 +9,7 @@ import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import VapiAssistant from "./components/VapiAssistant";
+import AIChatbotPopup from "./components/AIChatbotPopup";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <VapiAssistant />
+        <AIChatbotPopup />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
