@@ -12,9 +12,8 @@ interface Message {
   timestamp: Date;
 }
 
-const OPENAI_API_KEY = "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";
-
 const AIChatbotPopup = () => {
+  const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
   const { toast } = useToast();
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
