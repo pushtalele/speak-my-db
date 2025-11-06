@@ -32,9 +32,26 @@ cd <YOUR_PROJECT_NAME>
 # Step 3: Install the necessary dependencies.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Set up environment variables.
+# Copy .env.example to .env and fill in your API keys
+cp .env.example .env
+
+# Step 5: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
+
+## Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+VITE_SUPABASE_PROJECT_ID=your_supabase_project_id
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+VITE_SUPABASE_URL=your_supabase_url
+VITE_OPENAI_API_KEY=your_openai_api_key_here
+```
+
+**Note:** Never commit your `.env` file to version control. Use `.env.example` as a template.
 
 **Edit a file directly in GitHub**
 

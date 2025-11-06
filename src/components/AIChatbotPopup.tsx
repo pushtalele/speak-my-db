@@ -48,6 +48,11 @@ const AIChatbotPopup = () => {
     setLoading(true);
 
     try {
+      // Validate API key exists
+      if (!OPENAI_API_KEY) {
+        throw new Error("OpenAI API key is not configured. Please add VITE_OPENAI_API_KEY to your .env file.");
+      }
+
       const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -83,6 +88,12 @@ const AIChatbotPopup = () => {
       }
 
       const data = await response.json();
+      
+      // Validate response structure
+      if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+        throw new Error("Invalid response from OpenAI API");
+      }
+
       const assistantMessage: Message = {
         role: "assistant",
         content: data.choices[0].message.content,
